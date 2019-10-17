@@ -15,7 +15,6 @@ first().then(valReturned => console.log(valReturned));
 // similar to yield for generators which essentially pause the function
 async function getMovieData() {
   console.log("Starting");
-  // following does not run until promise is resolved
   let movieData = await $.getJSON("https://omdbapi.com?t=taken&apikey=thewdb");
   console.log("Done");
   console.log(movieData);
